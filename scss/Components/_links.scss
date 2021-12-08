@@ -1,0 +1,6 @@
+.restaurants {
+    @include display-links-homepage;
+    .restaurants__links {
+        @include display-restaurants-links;
+    }
+}
