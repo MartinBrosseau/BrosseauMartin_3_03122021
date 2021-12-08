@@ -3,13 +3,137 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8a3468ffc9.js" crossorigin="anonymous"></script> 	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     </head>
    
 
     <body>
-        <header>
-            <div class="logo">
-                <img src="assets/ohmyfood@2x.svg">
+        <header id="header">
+            <div class="logo--big">
+                <img src="assets/ohmyfood@2x.svg" alt="logo big">
             </div>
         </header>
+
+        <main>
+            <section class="intro">                
+                <form method="post" action="traitement.php">
+                    <div class="intro__localisation"></div>
+                        <div class="intro__icone">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <label for="localisation"></label>
+                        <input type="text" name="localisation" id="localisation" value="Paris, Belleville">
+                    </div>
+                    <div class="intro__text">
+                        <h1>Réservez le menu qui vous convient</h1>
+                        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    </div>
+                    <div class="intro__button">
+                        <input type="submit" value="Explorer nos restaurants">
+                    </div>
+                </form>                
+            </section> 
+            
+            <section class="utilisationsection">
+                <h2>Fonctionnement</h2>
+                <ul class="utilisation__list">
+                    <li class="utilisation__list__steps">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Choisissez un restaurant</p>
+                    </li>
+                    <li class="utilisation__list__steps">
+                        <i class="fas fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </li>
+                    <li class="utilisation__list__steps">
+                        <i class="fas fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="restaurantssection">
+                <h2>Restaurants</h2>
+                <div class="restaurants">
+
+                    <a href="#" class="restaurants__links">
+                        <img src="assets/palettedugout.jpg" alt="La Palette du goût">
+                        <span class="restaurants__names">La Palette du goût</span>
+                        <span class="restaurants__locations">Ménilmontant</span>
+                        <div class="restaurants__icones">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        
+                    </a>
+
+                    <a href="#" class="restaurants__links">
+                        <img src="assets/noteenchantée.jpg" alt="La note enchantée">
+                        <span class="restaurants__name">La note enchantée</span>
+                        <span class="restaurants__location">Charonne</span>
+                        <div class="restaurants__icones">
+                            <i class="far fa-heart"></i>
+                        </div>      
+                    </a>
+
+                    <a href="#" class="restaurants__links">
+                        <img src="assets/alafrançaise.jpg" alt="À la française">
+                        <span class="restaurants__names">À la française</span>
+                        <span class="restaurants__locations">Cité rouge</span>
+                        <div class="restaurants__icones">
+                            <i class="far fa-heart"></i>
+                        </div>                        
+                    </a>
+
+                    <a href="#" class="restaurants__links">
+                        <img src="assets/delicedessens.jpg" alt="Le délice des sens">
+                        <span class="restaurants__names">Le délice des sens</span>
+                        <span class="restaurants__locations">Folie-Méricourt</span>
+                        <div class="restaurants__icones">
+                            <i class="far fa-heart"></i>
+                        </div>                        
+                    </a> 
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            <div class="logo--small">
+                <img src="assets/ohmyfood.png" alt="logo small">
+            </div>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <p>Proposer un restaurant</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Devenir partenaire</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Mentions légales</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+            
+        </footer>
     </body>
+</html>
+
