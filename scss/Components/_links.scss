@@ -1,3 +1,6 @@
+.restaurantssection {
+    @include column-center;
+}
 .restaurants {
     @include display-links-homepage;
     .restaurants__links {
