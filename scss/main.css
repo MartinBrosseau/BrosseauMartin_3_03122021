@@ -1,10 +1,29 @@
 .restaurants img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 500px;
-  height: 250px;
+  width: 250px;
+  height: 150px;
   border: 0px solid white;
-  border-radius: 15%;
+  border-radius: 20px;
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro intro__localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.utilisationsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restaurants {
@@ -16,6 +35,13 @@
 .restaurants .restaurants__links {
   display: flex;
   flex-direction: column;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .homepageheader {

@@ -1,0 +1,12 @@
+.intro {
+    width: 100%;
+    @include column-center;
+    intro__localisation {
+        @include row-center;
+    }
+}
+
+.utilisationsection {
+    width: 100%;
+    @include column-center;
+}

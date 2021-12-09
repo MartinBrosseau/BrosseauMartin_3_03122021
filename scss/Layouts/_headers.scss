@@ -1,3 +1,4 @@
 .homepageheader {
-   @include header-primary;
+   width: 100%;
+   @include row-center;
 }
