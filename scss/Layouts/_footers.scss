@@ -1,4 +1,7 @@
 .footer {
     width: 100%;
     @include column-center;
+    .footer ul {
+        list-style-type: none;
+    }
 }
