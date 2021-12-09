@@ -1,6 +1,10 @@
 .restaurantssection {
     @include column-center;
+    h2 {
+        text-align: center;
+    }
 }
+
 .restaurants {
     @include display-links-homepage;
     .restaurants__links {
