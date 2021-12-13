@@ -18,10 +18,11 @@
 
 @mixin images-homepage {
     object-fit: cover;
-	width: 250px;
-	height: 100px;	
+	width: 300px;
+	height: 175px;	
 	border: 0px solid white;
-	border-radius: 20px;
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 @mixin column-center {

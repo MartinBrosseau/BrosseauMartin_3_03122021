@@ -3,10 +3,40 @@
     @include column-center;
     &__localisation {
         @include row-center;
+        margin-top: 20px;
+        background-color: rgb(230, 230, 230);
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
+    &__button {
+        @include row-center;
+    }
+}
+
+form input[type=submit] {
+    border: none;
+    color: white;
+    background-color: violet;
+    text-align: center;
+    border: 0px solid lightgrey;
+    padding: 15px;
+    font-size: 17px;
+    font-family: $text-font;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+form input[type=text] {   
+    border: none;
+    text-align: center;
+    font-family: $text-font;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(230, 230, 230);
 }
 
 .utilisationsection {
     width: 100%;
     @include column-center;
 }
+
