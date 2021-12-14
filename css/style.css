@@ -35,7 +35,7 @@ h2 {
 form input[type=submit] {
   border: none;
   color: white;
-  background-color: violet;
+  background-color: #9356DC;
   text-align: center;
   border: 0px solid lightgrey;
   padding: 15px;
@@ -43,6 +43,7 @@ form input[type=submit] {
   font-family: "Roboto";
   font-weight: bolder;
   border-radius: 50px;
+  margin-bottom: 25px;
 }
 
 form input[type=text] {
@@ -55,28 +56,27 @@ form input[type=text] {
 }
 
 .utilisationsection {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .restaurantssection {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.restaurantssection h2 {
-  text-align: center;
+  align-items: flex-start;
 }
 
 .restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
 }
 .restaurants .restaurants__links {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurants__links__description {
   display: flex;
   flex-direction: column;
 }
@@ -105,8 +105,17 @@ p {
   padding: 10px;
 }
 
-.utilisationsection ul {
-  list-style-type: numbers;
+h2 {
+  margin-left: 10px;
+}
+
+.restaurantssection {
+  background-color: whitesmoke;
+  padding: 5px;
+}
+.restaurantssection.restaurantssection a {
+  text-decoration: none;
+  color: black;
 }
 
 .footer {

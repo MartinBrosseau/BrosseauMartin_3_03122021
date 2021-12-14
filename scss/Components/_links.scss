@@ -1,13 +1,14 @@
 .restaurantssection {
-    @include column-center;
-    h2 {
-        text-align: center;
-    }
+    @include column-left;      
 }
 
 .restaurants {
-    @include display-links-homepage;
+    @include column-center;
     .restaurants__links {
         @include display-restaurants-links;
+    &__description {
+        display: flex;
+        flex-direction: column;
+        }
     }
 }

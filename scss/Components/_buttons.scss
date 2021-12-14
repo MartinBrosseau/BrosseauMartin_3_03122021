@@ -16,7 +16,7 @@
 form input[type=submit] {
     border: none;
     color: white;
-    background-color: violet;
+    background-color: $primary-color;
     text-align: center;
     border: 0px solid lightgrey;
     padding: 15px;
@@ -24,6 +24,7 @@ form input[type=submit] {
     font-family: $text-font;
     font-weight: bolder;
     border-radius: 50px;
+    margin-bottom: 25px;
 }
 
 form input[type=text] {   
@@ -36,7 +37,8 @@ form input[type=text] {
 }
 
 .utilisationsection {
-    width: 100%;
-    @include column-center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 

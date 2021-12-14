@@ -22,6 +22,15 @@ p {
     padding: 10px;
 }
 
-.utilisationsection ul {
-    list-style-type: numbers;
+h2 {
+    margin-left: 10px;
+}
+
+.restaurantssection {  
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    &.restaurantssection a {
+        text-decoration: none;
+        color: black;
+    }
 }
