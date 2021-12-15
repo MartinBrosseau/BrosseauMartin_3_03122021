@@ -1,7 +1,22 @@
 .footer {
+    @include column-left;
     width: 100%;
-    @include column-center;
-    .footer ul {
-        list-style-type: none;
+    padding: 20px;
+    padding-left: 30px;    
+    background-color: rgb(75, 75, 75);
+    &__title {
+        font-family: $title-font;
+        font-size: 20px;
+        color: white;
+    }
+}
+.footer a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: underline;
     }
 }
