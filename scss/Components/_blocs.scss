@@ -10,8 +10,8 @@ h2 {
 }
 
 .intro {
-    width: 100%;
-    @include column-center;
+    @include column-left;
+    @include bloc-postion;
     &__localisation {
         @include row-center;
         margin-top: 20px;
@@ -25,16 +25,33 @@ h2 {
 }
 
 .utilisationsection {
-    width: 100%;    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;    
+    @include column-left;
+    @include bloc-postion;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    & h2 {
+        margin-left: 15px;
+    }     
     .utilisation__list__steps {
-        border: 1px solid black;
+        border: 0px solid black;
         border-radius: 20px;
         background-color: rgb(240, 240, 240);
-        margin: 10px;
+        margin: 25px;
+        padding: 15px;
+        box-shadow: 3px 3px 6px darkgrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
+}
+
+.list__number {
+    border: 0px solid black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+    background-color: $primary-color;
 }
 
 .restaurants {
@@ -62,7 +79,7 @@ h2 {
 }
 
 .restaurantssection { 
-    width: 100%;
+    @include bloc-postion;
     background-color: rgb(240, 240, 240);
     padding: 5px;
     &.restaurantssection a {

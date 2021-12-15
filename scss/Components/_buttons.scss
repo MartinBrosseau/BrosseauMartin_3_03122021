@@ -1,17 +1,3 @@
-.intro {
-    width: 100%;
-    @include column-center;
-    &__localisation {
-        @include row-center;
-        margin-top: 20px;
-        background-color: rgb(230, 230, 230);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    &__button {
-        @include row-center;
-    }
-}
 
 form input[type=submit] {
     border: none;
@@ -33,12 +19,8 @@ form input[type=text] {
     font-family: $text-font;
     font-size: 15px;
     font-weight: bold;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
 }
 
-.utilisationsection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 
