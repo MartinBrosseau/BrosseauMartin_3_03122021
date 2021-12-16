@@ -9,19 +9,20 @@
     margin-left: -10px; 
 }
 
-@mixin display-links-homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
 @mixin display-restaurants-links {
     border: 0px solid black;
     border-radius: 15px;
     background-color: white;
     margin-bottom: 20px;
     box-shadow: 3px 3px 6px darkgrey;
+}
+@mixin display-menu-links {
+    border: 0px solid black;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px darkgrey;
+    margin-right: 5px;
 }
 
 @mixin images-homepage {

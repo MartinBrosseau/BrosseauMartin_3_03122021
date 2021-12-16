@@ -2,3 +2,13 @@
    width: 100%;
    @include row-center;
 }
+
+.restaurantsheader {
+   width: 100%;
+   @include row-center;
+   align-items: center;
+   .returnbutton a {
+      color: black;
+   }
+}
+
