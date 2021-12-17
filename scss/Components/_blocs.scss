@@ -3,7 +3,7 @@ html, body {
     margin: 0px;
 }
 .intro__text, .intro__button {
-    border: 0px, solid black;
+    border: 0px solid black;
     background-color: rgb(240, 240, 240);
     padding: 10px;
 }
@@ -102,6 +102,8 @@ body {
 
 .menu {
     @include bloc-postion;
+    margin-top: -30px;
+    position: relative;
     display: flex;
     flex-direction: column;
     border: 0px solid black;

@@ -5,6 +5,7 @@
 .bannière {
     @include bloc-postion;
     & img {
+        width: 100%;
         height: 250px;
         object-fit: cover;
     }
