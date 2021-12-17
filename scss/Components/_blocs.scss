@@ -1,5 +1,6 @@
 html, body {
     width: 100%;
+    margin: 0px;
 }
 .intro__text, .intro__button {
     border: 0px, solid black;
@@ -7,6 +8,9 @@ html, body {
     padding: 10px;
 }
 
+body {
+    margin: 0px;
+}
 
 
 .intro {
@@ -14,7 +18,7 @@ html, body {
     @include bloc-postion;
     &__localisation {
         @include row-center;
-        margin-top: 20px;
+        margin-top: 10px;
         background-color: rgb(225, 225, 225);
         padding-top: 10px;
         padding-bottom: 10px;
@@ -62,6 +66,7 @@ html, body {
 
 .restaurants {
     @include column-center;
+    padding-bottom: 50px;
     &__icones {
         display: flex;
         flex-direction: row;
@@ -97,22 +102,25 @@ html, body {
 
 .menu {
     @include bloc-postion;
-    @include column-center;
+    display: flex;
+    flex-direction: column;
     border: 0px solid black;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: rgb(240, 240, 240);
-    padding-left: 15px;
-    padding-right: 15px;
     &__title {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        margin-left: 10px;
+        margin-right: 20px;
         &__icone {
             font-size: 30px;
         }
     }
     &__button {
+        @include row-center;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -120,6 +128,8 @@ html, body {
         width: 100%;
     }
     &__links {
+        margin-left: 10px;
+        margin-right: 10px;
         @include display-menu-links;
         &__description {
             display: flex;

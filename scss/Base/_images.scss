@@ -2,9 +2,10 @@
     @include images-homepage;
 }
 
-.bannière img {
-    width: 100%;
-    margin-left: -10px;
-    height: 300px;
-    object-fit: cover;
+.bannière {
+    @include bloc-postion;
+    & img {
+        height: 250px;
+        object-fit: cover;
+    }
 }

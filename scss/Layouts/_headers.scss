@@ -1,12 +1,17 @@
 .homepageheader {
    width: 100%;
+   padding-top: 20px;
    @include row-center;
 }
 
 .restaurantsheader {
    width: 100%;
-   @include row-center;
+   display: flex;
+   flex-direction: row;
    align-items: center;
+   &__logo {
+      @include row-center;
+   }
    .returnbutton a {
       color: black;
    }
