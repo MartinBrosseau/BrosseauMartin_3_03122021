@@ -1,3 +1,15 @@
+@mixin tabletscreens {
+    @media screen and (width: map-get($breakpoints, tablets)){
+        @content;
+    }
+}
+
+@mixin desktopscreen {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
 @mixin row-center {
     display: flex;
     flex-direction: row;

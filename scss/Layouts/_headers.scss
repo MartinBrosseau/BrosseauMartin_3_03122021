@@ -15,10 +15,13 @@
       width: 100%;
       margin-left: -20px;
       @include row-center;
+      z-index: 0;
    }
    .returnbutton a {
       margin-left: 20px;
       color: black;
+      z-index: 1;
+      position: relative;
    }
 }
 

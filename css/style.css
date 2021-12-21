@@ -302,7 +302,7 @@ body {
 .footer__links {
   margin-left: 30px;
 }
-.footer__linksi {
+.footer__links i {
   margin-right: 10px;
 }
 .footer__title {
@@ -349,10 +349,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index: 0;
 }
 .restaurantsheader .returnbutton a {
   margin-left: 20px;
   color: black;
+  z-index: 1;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
