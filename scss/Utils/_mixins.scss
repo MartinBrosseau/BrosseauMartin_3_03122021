@@ -1,5 +1,5 @@
 @mixin tabletscreens {
-    @media screen and (width: map-get($breakpoints, tablets)){
+    @media screen and (min-width: map-get($breakpoints, tablets)){
         @content;
     }
 }

@@ -9,6 +9,6 @@ $title-font: 'Shrikhand';
 $text-font: 'Roboto';
 
 $breakpoints: (
-    tablets: (min-width:768px) and (max-width:992px),
-    desktop: (min-width: 992px)
-)
+    tablets: 768px,
+    desktop: 992px
+);

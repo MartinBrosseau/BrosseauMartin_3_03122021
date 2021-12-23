@@ -11,6 +11,9 @@ form input[type=submit] {
     font-weight: bolder;
     border-radius: 50px;
     margin-bottom: 25px;
+    @include tabletscreens {
+        font-size: 20px;
+    }
 }
 
 form input[type=text] {   
@@ -20,6 +23,9 @@ form input[type=text] {
     font-size: 15px;
     font-weight: bold;
     background-color: rgb(225, 225, 225);
+    @include tabletscreens {
+        font-size: 20px;
+    }
 }
 
 
