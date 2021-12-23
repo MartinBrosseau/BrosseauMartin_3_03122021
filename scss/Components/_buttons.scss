@@ -12,11 +12,20 @@ form input[type=submit] {
     font-weight: normal;
     border-radius: 50px;
     margin-bottom: 25px;
+    transition: transform 300ms, background-color 300ms;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.25);
+        background-color: lighten($primary-color, 5);
+    }
     @include tabletscreens {
         font-size: 25px;
     }
 }
 
+form input:focus {
+	outline: 0;
+}
 form input[type=text] {   
     border: none;
     text-align: center;
