@@ -27,6 +27,17 @@
         }
 
     }
+    @include desktopscreen {
+        .footer__links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            & a {
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+    }
 }
 .footer a {
     display: flex;
