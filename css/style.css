@@ -70,6 +70,11 @@ h2 {
   font-family: "Shrikhand";
   font-size: 28px;
 }
+@media screen and (min-width: 768px) {
+  .menu h1 {
+    font-size: 35px;
+  }
+}
 
 .menu h2 {
   width: 50px;
@@ -77,6 +82,11 @@ h2 {
   font-family: "Roboto";
   font-weight: 300;
   border-bottom: 4px solid #99E2D0;
+}
+@media screen and (min-width: 768px) {
+  .menu h2 {
+    font-size: 30px;
+  }
 }
 
 .menu__links {
@@ -124,7 +134,7 @@ form input[type=submit] {
 }
 @media screen and (min-width: 768px) {
   form input[type=submit] {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -193,6 +203,11 @@ body {
   margin-left: 15px;
 }
 @media screen and (min-width: 768px) {
+  .utilisationsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .utilisationsection h2 {
     font-size: 30px;
   }
@@ -214,13 +229,6 @@ body {
   .utilisationsection .utilisation__list__steps {
     margin-left: 0px;
     margin-right: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .utilisationsection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -253,11 +261,6 @@ body {
   margin-bottom: 20px;
   box-shadow: 3px 3px 6px darkgrey;
 }
-@media screen and (min-width: 768px) {
-  .restaurants__links {
-    margin: 20px;
-  }
-}
 .restaurants__links__description {
   display: flex;
   flex-direction: row;
@@ -273,6 +276,9 @@ body {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+  }
+  .restaurants__links {
+    margin: 20px;
   }
 }
 
@@ -345,6 +351,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu .menu__title__icone {
+    margin-left: 50px;
+  }
+  .menu__links {
+    font-size: 20px;
+  }
+  .menu__entrées, .menu__plats, .menu__desserts {
+    width: 60%;
+  }
+}
 
 .food__name {
   padding-bottom: 5px;
@@ -365,11 +387,6 @@ body {
 .footer__links i {
   margin-right: 10px;
 }
-@media screen and (min-width: 768px) {
-  .footer__links {
-    font-size: 20px;
-  }
-}
 .footer__title {
   font-family: "Shrikhand";
   font-size: 20px;
@@ -377,15 +394,16 @@ body {
   margin-left: 30px;
 }
 @media screen and (min-width: 768px) {
-  .footer__title {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer__links {
+    font-size: 20px;
+  }
+  .footer__title {
+    font-size: 30px;
   }
 }
 

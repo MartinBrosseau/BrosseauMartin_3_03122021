@@ -61,6 +61,9 @@ h2 {
 .menu h1 {
     font-family: $title-font;
     font-size: 28px;
+    @include tabletscreens {
+        font-size: 35px;
+    }
 }
 .menu h2 {
     width: 50px;
@@ -68,7 +71,9 @@ h2 {
     font-family: $text-font;
     font-weight: 300;
     border-bottom: 4px solid $tertiary-color;
-    
+    @include tabletscreens {
+        font-size: 30px;
+    }
 }
 
 .menu__links {

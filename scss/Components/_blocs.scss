@@ -42,6 +42,7 @@ body {
         margin-left: 15px;
     }
     @include tabletscreens {
+        @include column-center; 
         h2 {
             font-size: 30px;
         }
@@ -62,9 +63,6 @@ body {
             margin-left: 0px;
             margin-right: 0px;
         }
-    }
-    @include tabletscreens {
-        @include column-center;   
     }
 }
 
@@ -90,9 +88,6 @@ body {
     }
     &__links {
         @include display-restaurants-links;
-        @include tabletscreens {
-            margin: 20px;
-        }
     &__description { 
         display: flex;
         flex-direction: row;
@@ -108,6 +103,9 @@ body {
         display: flex;
         flex-direction: row;
         overflow-x: auto;
+        &__links {
+            margin: 20px;
+        }
     }
 }
 
@@ -165,11 +163,23 @@ body {
             flex-direction: row;
             justify-content: space-between;      
             padding: 10px;
-            padding-bottom: 0px;
+            padding-bottom: 0px;    
         }
         &__text {
             display: flex;
-            flex-direction: column;
+            flex-direction: column;  
+        }
+    }
+    @include tabletscreens {
+        @include column-center;
+        .menu__title__icone {
+            margin-left: 50px;
+        }
+        &__links {
+            font-size: 20px;
+        }
+        &__entrées, &__plats, &__desserts {
+            width: 60%;
         }
     }
 }
