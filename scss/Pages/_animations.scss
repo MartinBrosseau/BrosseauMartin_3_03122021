@@ -1,0 +1,78 @@
+
+
+@keyframes menu-opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes like {
+
+}
+
+@keyframes checked-translate {
+    0% {
+        transform: translateX(-0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(360deg);
+    }
+}
+
+@keyframes loading-spinner {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;    
+    &::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 10px solid transparent;
+        border-radius: 50%;
+        border-top-color: $tertiary-color;
+        border-bottom-color: $tertiary-color;
+        animation: loading-spinner infinite 3s ease 0s forwards;
+    }
+}
+
+.menu__links .checkbox {
+    width: 0%;
+    transition: width 3s ease-in-out;
+}
+
+.menu__links:hover {
+    .checkbox {
+        width: 100%;
+        & i {
+            animation: checked-translate 0.5s ease-in-out 0s reverse backwards;
+        }         
+    }
+}
+    
+    
+   
+
+.menu {
+    &__title {    
+        animation: menu-opacity 1.5s 0.5s backwards;
+    }
+    &__entrées {      
+        animation: menu-opacity 1.5s 1s backwards;
+    }
+    &__plats {
+        animation: menu-opacity 1.5s 1.5s backwards;
+    }
+    &__desserts {
+        animation: menu-opacity 1.5s 2s backwards;
+    }
+}

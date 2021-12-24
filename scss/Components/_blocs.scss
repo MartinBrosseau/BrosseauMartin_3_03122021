@@ -87,6 +87,12 @@ body {
     }
 }
 
+.utilisation__list__steps:hover {
+    i {
+        color: $primary-color;
+    }
+}
+
 .list__number {
     margin-left: -25px;
     border: 0px solid black;
@@ -105,10 +111,14 @@ body {
         flex-direction: row;
         justify-content: flex-end; 
         align-items: center; 
-        font-size: 25px;      
+        font-size: 25px;     
     }
     &__links {
         @include display-restaurants-links;
+        transition: 300ms ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
     &__description { 
         display: flex;
         flex-direction: row;
@@ -235,4 +245,7 @@ body {
 
 .menu__links:hover .checkbox i {
     display: block;
+
 }
+
+
