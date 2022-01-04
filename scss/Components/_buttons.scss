@@ -2,6 +2,7 @@
 form input[type=submit] {
     border: none;
     color: white;
+    background: $button-color;
     background-color: $primary-color;
     text-align: center;
     border: 0px solid lightgrey;
@@ -12,11 +13,11 @@ form input[type=submit] {
     font-weight: normal;
     border-radius: 50px;
     margin-bottom: 25px;
-    transition: transform 300ms, background-color 300ms;
+    transition: all 500ms ease;
     &:hover {
         cursor: pointer;
         transform: scale(1.25);
-        background-color: lighten($primary-color, 5);
+        background-color: lighten($primary-color, 10);
     }
     @include tabletscreens {
         font-size: 25px;

@@ -29,10 +29,15 @@
 
 @keyframes loading-spinner {
     0% {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
+        opacity: 1; 
+    }
+    75% {
+        opacity: 1;
     }
     100% {
         transform: rotate(360deg);
+        opacity: 0;
     }
 }
 
@@ -50,11 +55,10 @@
         border-radius: 50%;
         border-top-color: $tertiary-color;
         border-bottom-color: $tertiary-color;
-        animation: loading-spinner  1s infinite ease;
-       
+        animation: loading-spinner 2.5s ease forwards;     
     }
 }
-   
+
 
 .menu {
     &__title {    

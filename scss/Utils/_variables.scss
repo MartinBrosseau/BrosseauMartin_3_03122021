@@ -10,6 +10,8 @@ $title-font: 'Shrikhand';
 
 $text-font: 'Roboto';
 
+$button-color: linear-gradient(to bottom right, $primary-color, $secondary-color);
+
 $breakpoints: (
     tablets: 768px,
     desktop: 992px
