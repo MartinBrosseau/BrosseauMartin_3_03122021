@@ -119,6 +119,12 @@ body {
         &:hover {
             transform: scale(1.1);
         }
+        & i {
+            background-clip: text;
+            &:hover {   
+                background-color: red;
+            }
+        }                      
     &__description { 
         display: flex;
         flex-direction: row;
@@ -192,6 +198,11 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         @include display-menu-links;
+        & a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
         &__description {
             width: 100%;
             display: flex;
@@ -218,6 +229,27 @@ body {
     }
 }
 
+.checkbox {
+    width: 0%;
+    z-index: -1;
+    opacity: 0;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $tertiary-color;
+    margin-left: 10px;
+    transition: all 1s ease;
+    & i {
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+    }
+}
+
 .food__name {
     padding-bottom: 5px;
 }
@@ -225,24 +257,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    .checkbox {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 0px solid black;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: $tertiary-color;
-        margin-left: 10px;
-        transition: all 1s ease;
-        & i {
-            margin-left: 30px;
-            margin-right: 30px;
-            color: white;
-        }
     }
-}
+
 
 
 
