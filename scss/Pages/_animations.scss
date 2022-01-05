@@ -9,14 +9,6 @@
     }
 }
 
-@keyframes like {
-    0% {
-        background-color: white;
-    }
-    100% {
-        background-color: red;
-    }
-}
 
 @keyframes checked-rotate {
     0% {
@@ -47,14 +39,14 @@
 @keyframes loading-background {
     0% {
         opacity: 0.6; 
-        z-index: 2;
+        z-index: 3;
     }
     75% {
         opacity: 0.6; 
-        z-index: 2;
+        z-index: 3;
     }
     99% {
-        z-index: 2;
+        z-index: 3;
     }
     100% {
         opacity: 0;
@@ -85,7 +77,7 @@
 .loading-background {
     &::before {
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         display: flex;
         content: "";
         width: 100vw;
