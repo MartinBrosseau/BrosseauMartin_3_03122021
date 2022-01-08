@@ -288,6 +288,7 @@ body {
   font-size: 25px;
 }
 .restaurants__links {
+  position: relative;
   border: 0px solid black;
   border-radius: 15px;
   background-color: white;
