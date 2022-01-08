@@ -167,6 +167,7 @@ body {
         justify-content: space-between;
         overflow-x: auto;
         &__links {
+            position: relative;
             margin: 20px;
         }
     }
