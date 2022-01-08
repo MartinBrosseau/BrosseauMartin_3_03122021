@@ -167,7 +167,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         overflow-x: auto;
-        &__links {
+        .restaurants__links {
             position: relative;
             margin: 20px;
         }
