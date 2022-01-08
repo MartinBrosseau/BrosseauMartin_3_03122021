@@ -158,6 +158,7 @@ body {
         flex-direction: row;
         overflow-x: auto;
         &__links {
+            position: relative;
             margin: 20px;
         }
     }

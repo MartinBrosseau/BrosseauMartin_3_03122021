@@ -338,6 +338,7 @@ body {
     overflow-x: auto;
   }
   .restaurants__links {
+    position: relative;
     margin: 20px;
   }
 }
